@@ -1,0 +1,34 @@
+{
+  "name": "happy-codex-sync",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Bridge local Codex threads into Happy-managed sessions.",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "happy",
+    "bridge",
+    "sync"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "bin": {
+    "happy-codex-sync": "./bin/happy-codex-sync.mjs"
+  },
+  "scripts": {
+    "start": "node ./bin/happy-codex-sync.mjs",
+    "doctor": "node ./bin/happy-codex-sync.mjs doctor",
+    "setup": "node ./bin/happy-codex-sync.mjs setup",
+    "list-local": "node ./bin/happy-codex-sync.mjs list-local",
+    "list-managed": "node ./bin/happy-codex-sync.mjs list-managed",
+    "sync": "node ./bin/happy-codex-sync.mjs sync"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
